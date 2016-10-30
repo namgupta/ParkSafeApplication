@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/image_container"
+
+    tools:context="com.example.ngupta1.parksafe.ParkingSpotViewPager">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_introduction"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        tools:listitem="@layout/pager_item"
+        />
+
+    <RelativeLayout
+        android:id="@+id/viewPagerIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@id/pager_introduction"
+        android:layout_marginTop="5dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/viewPagerCountDots"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+        <ImageButton
+            android:id="@+id/btn_next"
+            android:layout_width="42dip"
+            android:layout_height="42dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/btn_round_semitransperant"
+            android:src="@mipmap/ic_navigation_arrow_forward" />
+
+        <ImageButton
+            android:id="@+id/btn_finish"
+            android:layout_width="42dip"
+            android:layout_height="42dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/btn_round_semitransperant"
+            android:contentDescription="Let's start"
+            android:src="@mipmap/ic_navigation_check"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewPagerIndicator"
+        android:id="@+id/parking_short_information"
+        android:padding="0dp">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:background="@color/colorPrimaryDark"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/location_address_short"
+                android:text="128 Leicester Street"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/cell_border"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/location_rent"
+                android:text="$300/month"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:gravity="center" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+
+            android:padding="5dp">
+            <TextView
+                android:text="Available"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" />
+            <TextView
+                android:text="Total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bottom_border"
+
+            android:paddingTop="0dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp">
+            <TextView
+                android:id="@+id/location_available"
+                android:text="16"
+                android:layout_width="0dp"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/location_total"
+                android:text="20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_weight="1"
+
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="0dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp">
+            <TextView
+                android:text="Full Address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left" />
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bottom_border"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="25dp"
+            android:paddingLeft="25dp">
+            <TextView
+                android:id="@+id/location_address"
+                android:text="128, Leicester Street, Carlton - VIC 3053"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:layout_weight="2"
+
+                android:gravity="left" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="0dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp">
+            <TextView
+                android:text="Available Till"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left" />
+            <TextView
+                android:text=""
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+        </TableRow>
+        <TableRow
+
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bottom_border"
+
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="25dp"
+            android:paddingLeft="25dp">
+            <TextView
+                android:id="@+id/location_available_till"
+                android:text="NA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:layout_weight="2"
+                android:gravity="left" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="0dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp">
+            <TextView
+                android:text="Special Instructions"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left" />
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bottom_border"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="25dp"
+            android:paddingLeft="25dp">
+            <TextView
+                android:id="@+id/location_special"
+                android:text="NA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:layout_weight="2"
+                android:gravity="left" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:padding="10dp">
+            <Button
+                android:id="@+id/location_book"
+                android:text="Book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1" />
+
+
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
+

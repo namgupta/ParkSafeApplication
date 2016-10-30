@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:paddingTop="10dp"
+    android:layout_height="match_parent">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/parking_short_information"
+        android:layout_marginTop="20dp"
+        android:padding="0dp">
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+android:weightSum="3"
+            android:background="@color/colorPrimaryDark"
+            android:paddingTop="5dp"
+            android:paddingBottom="0dp"
+
+            android:paddingLeft="15dp">
+            <TextView
+                android:text="Reference"
+                android:layout_width="0dp"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left" />
+            <TextView
+                android:text="Booking Ref"
+                android:textSize="15dp"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left" />
+            <TextView
+                android:text="Amount"
+                android:textSize="15dp"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left" />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:weightSum="3"
+            android:background="@color/colorPrimaryDark"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+
+            android:paddingLeft="25dp">
+            <TextView
+                android:text="PY0"
+                android:layout_width="0dp"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:id="@+id/payment_id"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"/>
+
+            <TextView
+                android:text="BK0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:id="@+id/payment_booking_id"
+                android:gravity="left"/>
+
+            <TextView
+                android:text="300"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:id="@+id/payment_amount"
+                android:gravity="left"/>
+
+        </TableRow>
+
+
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="0dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp">
+            <TextView
+                android:text="Location"
+                android:textSize="14dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left" />
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bottom_border"
+            android:paddingTop="2dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="25dp"
+            android:paddingLeft="25dp">
+            <TextView
+                android:text="128, Leicester Street, Carlton - VIC 3053"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_weight="2"
+                android:id="@+id/payment_location"
+                android:gravity="left" />
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+
+            android:paddingTop="2dp"
+            android:paddingBottom="0dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp">
+            <TextView
+                android:text="From"
+                android:layout_width="0dp"
+                android:textSize="14dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left" />
+            <TextView
+                android:text="Till"
+                android:textSize="14dp"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left" />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bottom_border"
+
+            android:paddingTop="2dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="25dp"
+            android:paddingLeft="25dp">
+            <TextView
+                android:text="20-10-2016"
+                android:layout_width="0dp"
+                android:textSize="15dp"
+                android:id="@+id/payment_from"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"/>
+
+            <TextView
+                android:text="31-12-2016"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                android:id="@+id/payment_till"
+                android:gravity="left"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="0dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp">
+            <TextView
+                android:text="Transaction Date"
+                android:textSize="14dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left" />
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bottom_border"
+            android:paddingTop="2dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="25dp"
+            android:paddingLeft="25dp">
+            <TextView
+                android:text="2016-10-15 20:11:19"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_weight="2"
+                android:id="@+id/payment_time"
+                android:gravity="left" />
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</LinearLayout>

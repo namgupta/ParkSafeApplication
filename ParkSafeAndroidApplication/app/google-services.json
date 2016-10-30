@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "142118526425",
+    "firebase_url": "https://parksafe-93270.firebaseio.com",
+    "project_id": "parksafe-93270",
+    "storage_bucket": "parksafe-93270.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142118526425:android:24ed69f8d9760cf3",
+        "android_client_info": {
+          "package_name": "com.example.ngupta1.parksafe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "142118526425-b08hcjfvtr8k2643mludkqk2g3i7ii5p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAy1UHd6STgjpprmcJcPKiHfpimdBI3VvM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

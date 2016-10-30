@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/image_container"
+
+    tools:context="com.example.ngupta1.parksafe.ParkingSpotViewPager">
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewPagerIndicator"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:id="@+id/booking_detail"
+        android:padding="0dp">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:background="@color/colorPrimaryDark"
+            android:padding="10dp">
+            <TextView
+                android:text="Booking Reference - BK00"
+                android:id="@+id/booking_reference_detail"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="0dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            >
+            <TextView
+                android:text="Booking Status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left" />
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bottom_border"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="25dp"
+            android:paddingLeft="25dp">
+            <TextView
+                android:text="Active"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_weight="2"
+                android:id="@+id/booking_status_detail"
+                android:gravity="left" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+
+            android:paddingTop="5dp"
+            android:paddingBottom="0dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp">
+            <TextView
+                android:text="Start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left" />
+            <TextView
+                android:text="End"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left" />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bottom_border"
+
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="25dp"
+            android:paddingLeft="25dp">
+            <TextView
+                android:text="20-10-2016"
+                android:layout_width="0dp"
+                android:textSize="17dp"
+                android:id="@+id/booking_startdate_detail"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"/>
+
+            <TextView
+                android:text="31-12-2016"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:layout_weight="1"
+                android:id="@+id/booking_enddate_detail"
+                android:gravity="left"/>
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="0dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp">
+            <TextView
+                android:text="Booking Date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left" />
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bottom_border"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="25dp"
+            android:paddingLeft="25dp">
+            <TextView
+                android:text="17-10-2016 20:12:19"
+                android:layout_width="0dp"
+                android:id="@+id/booking_date_detail"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:layout_weight="2"
+                android:gravity="left" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="0dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp">
+            <TextView
+                android:text="Location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left" />
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bottom_border"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="25dp"
+            android:paddingLeft="25dp">
+            <TextView
+                android:text="128 Leicester Street, Carlton, VIC- 3053"
+                android:layout_width="0dp"
+                android:id="@+id/booking_location_detail"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:layout_weight="2"
+                android:gravity="left" />
+
+
+        </TableRow>
+
+
+
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:background="@color/colorPrimaryDark"
+            android:padding="10dp">
+            <TextView
+                android:text="Associated Payment"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="0dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            >
+            <TextView
+                android:text="Pending Amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left" />
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bottom_border"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="25dp"
+            android:paddingLeft="25dp">
+            <TextView
+                android:text="0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_weight="2"
+                android:id="@+id/booking_pendingamount_detail"
+                android:gravity="left" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+
+            android:paddingTop="5dp"
+            android:paddingBottom="0dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp">
+            <TextView
+                android:text="Next Due Date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left" />
+            <TextView
+                android:text="Paid Till"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left" />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bottom_border"
+
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="25dp"
+            android:paddingLeft="25dp">
+            <TextView
+                android:text="20-10-2016"
+                android:layout_width="0dp"
+                android:textSize="17dp"
+                android:id="@+id/booking_duedate_detail"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"/>
+
+            <TextView
+                android:text="31-10-2016"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:layout_weight="1"
+                android:id="@+id/booking_paidtill_detail"
+                android:gravity="left"/>
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:padding="5dp">
+            <Button
+                android:text="Pay"
+                android:id="@+id/booking_makepayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1" />
+            <Button
+                android:text="Modify Booking"
+                android:id="@+id/booking_makepayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1" />
+
+
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
+

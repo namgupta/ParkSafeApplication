@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ngupta1.parksafe.ViewBookings"
+    >
+    <include
+        layout="@layout/app_bar_main"
+        android:id="@+id/check"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:text="Choose Location"
+        android:id="@+id/choose_location"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        android:padding="5dp"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/lvOwnersHubChooseLocation"
+        android:transcriptMode="alwaysScroll"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="90dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:background="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choose_location" />
+
+</RelativeLayout>
